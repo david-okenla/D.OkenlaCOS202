@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  postgres_db:
+    container_name: container_2
+    restart : always
+    environment:
+      POSTGRES_USER=david_okenla
+      POSTGRES_PASSWORD=1234
+      POSTGRES_DB=postgres
+
+    ports:
+      - "5432:5432"
